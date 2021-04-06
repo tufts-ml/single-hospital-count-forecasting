@@ -9,7 +9,7 @@ See our manuscript (to be posted soon!):
 > Appears in ICLR 2021 Workshop on Machine Learning for Preventing and Combating Pandemics.
 > [TODO arxiv.org link here]
 
-Jump to: [Project Goals](#project-goals) &nbsp; [Quickstart Guide](#quickstart-guide) &nbsp; (Repository Overview)(#repository-contents) &nbsp; [Installation Guide](#installation) &nbsp; [Datasets Guide](#datasets) &nbsp; [How to Run Experiments](#how-to-run-experiments) 
+Jump to: [Project Goals](#project-goals) &nbsp; [Limitations](#limitations) &nbsp; [Quickstart Guide](#quickstart-guide) &nbsp; [Repository Contents](#repository-contents) &nbsp; [Installation Guide](#installation) &nbsp; [Datasets Guide](#datasets) &nbsp; [How to Run Experiments](#how-to-run-experiments) 
 
 Project Goals
 =============
@@ -29,7 +29,10 @@ In our workshop paper we demonstrated our approach on several public datasets:
 
 Further prospective evaluation in our manuscript compares our approach favorably to baselines currently used by stakeholders at 3 related hospitals to forecast 2-week-ahead demand by rescaling state-level forecasts.
 
-**Limitations**: There are some serious limitations to our approach, as reviewed in our manuscript: assuming the future is like the past is always a frail assumption, and the data we assume is available to do forecasting is quite limited. Nevertheless, we believe our probabilistic models can help communicate uncertainty and be a starting point for helping make challenging decisions from limited data.
+Limitations
+-----------
+
+There are some serious limitations to our approach, which are thoroughly reviewed in our manuscript. Assuming the future is like the past is always a frail assumption, and the data we assume is available to do forecasting is quite limited. Nevertheless, we believe our probabilistic models can help communicate uncertainty and be a starting point for helping make challenging decisions from limited data.
 
 
 Quickstart Guide
@@ -38,7 +41,7 @@ Quickstart Guide
 To create a set of forecasts for a single site:
 
 1. Checkout this repository on your local machine
-2. Install and activate conda environment
+2. Install and activate conda environment [see Installation Guide](#installation)
 3. Create a subdirectory called `gar_samples`
 4. To produce a forecast for Tufts Medical Center given our available data from summer 2020, you can do:
 
@@ -71,6 +74,38 @@ Files and directories in this repository:
   - `plot_forecasts.py` - Plots summary statistics of forecasts against true observed counts.
   - `poisson_vs_genpoisson.py` - Compares standard and generalized Poisson likelihoods on our model.
   - `run_simple_forecast.py` - Launches forecasting for single-site models.
+
+
+Installation
+=============
+
+### Requirements
+
+* Anaconda 4.8 or higher
+* Python 3.6+
+
+Follow the two steps below to install *everything* on your local system.
+
+These have been successfully tested on TODO LIST PLATFORMS as of 2021-04-06.
+
+### Step 1) Install `conda` to manage your environment and packages
+
+Links for installation of "minimal" version of conda:
+
+https://docs.conda.io/en/latest/miniconda.html
+
+Make sure this will edit your PATH (should be automatic on OS X and Linux).
+
+### Step 2) Using conda, create the project specific environment (includes all python packages needed)
+
+We use the included YAML specification file: [`site_level_forecasting.yml`](#TODO)
+
+To install, just open any terminal, then do:
+
+```
+$ conda env create -f site_level_forecasting.yml
+```
+
 
 How We Ran Our Experiments
 ==========================
