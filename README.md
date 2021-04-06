@@ -1,20 +1,60 @@
+Welcome! 
+
+This repository hosts code and datasets related to a collaborative research project between researchers in the Department of Computer Science at Tufts University and at Tufts Medical Center.
+
+See our manuscript (to be posted soon!):
+
+> Forecasting COVID-19 counts at a single hospital: A Hierarchical Bayesian approach.
+> Alexandra Hope Lee, Panagiotis Lymperopoulos, Joshua T. Cohen, John B. Wong, and Michael C. Hughes.
+> Appears in ICLR 2021 Workshop on Machine Learning for Preventing and Combating Pandemics.
+> [TODO arxiv.org link here]
+
+Project Goals
+=============
+
+We consider the problem of forecasting the daily number of hospitalized COVID-19 patients at a single hospital site, in order to help administrators with logistics and planning.
+
+We develop several candidate hierarchical Bayesian models which can:
+
+* capture  the  count  nature  of  data  via either the generalized  Poisson  likelihood (recommended) or the standard Poisson likelihood
+* model  time-series  dependencies  via  two kinds of latent process: autoregressive  and  Gaussian  process
+* share statistical strength across related sites
+
+In our workshop paper we demonstrated our approach on several public datasets:
+
+* 8 hospitals in Massachusetts, U.S.A.
+* 10 hospitals in the United Kingdom.
+
+Further prospective evaluation compares our approach favorably to baselines currently used by stakeholders at 3 related hospitals to forecast 2-week-ahead demand by rescaling state-level forecasts.
+
+Jump to: [Quickstart Guide](#quickstart-guide) &nbsp; (Repository Overview)(#repository-contents) &nbsp; [Installation Guide](#installation) &nbsp; [Datasets Guide](#datasets) &nbsp; [How to Run Experiments](#how-to-run-experiments)
+
 Quickstart Guide
 ================
+
 To create a set of forecasts for a single site:
-1. Download all files in `src` and `mass_dot_gov_datasets`
+
+1. Checkout this repository on your local machine
 2. Install and activate conda environment
 3. Create a subdirectory called `gar_samples`
-4. Run `python run_simple_forecast.py -a <input_csv_file>`, where `<input_csv_file>` is any of the provided csv files.
+4. Run 
 
-Output from running forecasts for Tufts Medical Center:
+```
+python run_simple_forecast.py -a datasets/mass_dot_gov/tufts_medical_center_2020-04-29_to_2020-07-06.cs
+```
 
-![Example forecast plot](forecasts.pdf)
+#### Expected output from running forecasts for Tufts Medical Center:
 
-Files & Directories
+![Example forecast plot for Tufts Medical Center](example_forecast_tmc.pdf)
+
+Repository Overview
 ===================
+
+Files and directories in this repository:
+
 - `notebooks` - Jupyter notebooks with detailed specifications of the models and how they translate to code.
-- `mass_dot_gov_datasets` - CSV files with data used for experiments.
-- `src`
+- `datasets/` - CSV files with data used for experiments.
+- `src/`
   - `arg_types.py` - Checks that filenames specified by command-line arguments have proper suffixes.
   - `gar_forecast.py` - Makes future forecasts using single-site GAR model.
   - `gar_grid_search.py` - Performs grid search for single-site GAR model.
@@ -31,6 +71,7 @@ Files & Directories
 
 How We Ran Our Experiments
 ==========================
+
 Required Libraries
 ---------
 - pymc3: https://docs.pymc.io/
