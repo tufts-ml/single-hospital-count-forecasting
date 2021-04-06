@@ -14,6 +14,6 @@ dependencies:
   ## Data I/O
   - pandas>=0.22
   - dill>=0.2
-  ## PyMC 3.9 (requires 0.11)
+  ## PyMC 3.9 (requires arvix 0.11 in our experience)
   - conda-forge::pymc3==3.9.3
   - conda-forge::arviz=0.11.0
