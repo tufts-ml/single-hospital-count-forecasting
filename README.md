@@ -1,6 +1,6 @@
 Welcome! 
 
-This repository hosts code and datasets related to a collaborative research project between researchers in the Department of Computer Science at Tufts University and at Tufts Medical Center.
+This repository hosts code and datasets related to forecasting counts of resource utilization at a single hospital site, given a past time-series history of counts at that site. This code might be a start to help answering questions like: "How many people will be admitted on each day for the next two weeks? How many beds will be in use?" This is a collaborative research project between researchers in the Department of Computer Science at Tufts University and at Tufts Medical Center.
 
 See our manuscript (to be posted soon!):
 
@@ -8,6 +8,8 @@ See our manuscript (to be posted soon!):
 > Alexandra Hope Lee, Panagiotis Lymperopoulos, Joshua T. Cohen, John B. Wong, and Michael C. Hughes.
 > Appears in ICLR 2021 Workshop on Machine Learning for Preventing and Combating Pandemics.
 > [TODO arxiv.org link here]
+
+Jump to: [Project Goals](#project-goals) &nbsp; [Quickstart Guide](#quickstart-guide) &nbsp; (Repository Overview)(#repository-contents) &nbsp; [Installation Guide](#installation) &nbsp; [Datasets Guide](#datasets) &nbsp; [How to Run Experiments](#how-to-run-experiments) 
 
 Project Goals
 =============
@@ -23,11 +25,12 @@ We develop several candidate hierarchical Bayesian models which can:
 In our workshop paper we demonstrated our approach on several public datasets:
 
 * 8 hospitals in Massachusetts, U.S.A.
-* 10 hospitals in the United Kingdom.
+* 10 hospitals in the United Kingdom
 
-Further prospective evaluation compares our approach favorably to baselines currently used by stakeholders at 3 related hospitals to forecast 2-week-ahead demand by rescaling state-level forecasts.
+Further prospective evaluation in our manuscript compares our approach favorably to baselines currently used by stakeholders at 3 related hospitals to forecast 2-week-ahead demand by rescaling state-level forecasts.
 
-Jump to: [Quickstart Guide](#quickstart-guide) &nbsp; (Repository Overview)(#repository-contents) &nbsp; [Installation Guide](#installation) &nbsp; [Datasets Guide](#datasets) &nbsp; [How to Run Experiments](#how-to-run-experiments)
+**Limitations**: There are some serious limitations to our approach, as reviewed in our manuscript: assuming the future is like the past is always a frail assumption, and the data we assume is available to do forecasting is quite limited. Nevertheless, we believe our probabilistic models can help communicate uncertainty and be a starting point for helping make challenging decisions from limited data.
+
 
 Quickstart Guide
 ================
@@ -37,10 +40,10 @@ To create a set of forecasts for a single site:
 1. Checkout this repository on your local machine
 2. Install and activate conda environment
 3. Create a subdirectory called `gar_samples`
-4. Run 
+4. To produce a forecast for Tufts Medical Center given our available data from summer 2020, you can do:
 
 ```
-python run_simple_forecast.py -a datasets/mass_dot_gov/tufts_medical_center_2020-04-29_to_2020-07-06.cs
+python run_simple_forecast.py -a datasets/mass_dot_gov/tufts_medical_center_2020-04-29_to_2020-07-06.csv
 ```
 
 #### Expected output from running forecasts for Tufts Medical Center:
