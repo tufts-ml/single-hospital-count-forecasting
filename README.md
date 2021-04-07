@@ -41,19 +41,19 @@ Quickstart Guide
 To create a set of forecasts for a single site:
 
 1. Checkout this repository on your local machine
-2. Install and activate conda environment [see Installation Guide](#installation)
+2. Install and activate conda environment ([see Installation Guide](#installation))
 3. Create a subdirectory called `gar_samples`
 4. To produce a forecast for Tufts Medical Center given our available data from summer 2020, you can do:
 
 ```
-python run_simple_forecast.py -a datasets/mass_dot_gov/tufts_medical_center_2020-04-29_to_2020-07-06.csv
+python run_simple_forecast.py -a ../datasets/mass_dot_gov/tufts_medical_center_2020-04-29_to_2020-07-06.csv
 ```
 
 #### Expected output from running forecasts for Tufts Medical Center:
 
 ![Example forecast plot for Tufts Medical Center](example_forecast_tmc.pdf)
 
-Repository Overview
+Repository Contents
 ===================
 
 Files and directories in this repository:
@@ -98,12 +98,12 @@ Make sure this will edit your PATH (should be automatic on OS X and Linux).
 
 ### Step 2) Using conda, create the project specific environment (includes all python packages needed)
 
-We use the included YAML specification file: [`site_level_forecasting.yml`](#TODO)
+We use the included YAML specification file: [`site_level_forecaster.yml`](site_level_forecaster.yml)
 
 To install, just open any terminal, then do:
 
 ```
-$ conda env create -f site_level_forecasting.yml
+$ conda env create -f site_level_forecaster.yml
 ```
 
 
@@ -119,7 +119,7 @@ Experiment #1: Standard vs Generalized Poisson
 -------------
 On each dataset, trains and scores GAR model with W=1 first using Standard Poisson likelihood, then using Generalized Poisson likelihood.
 
-Reads all files in the directory specified on line 17 of the script. To change the directory name and target column name, modify lines 17, 19, and 29.
+Reads all files in the directory specified on line 16 of the script. To change the directory name and target column name, modify lines 16, 18, and 28.
 
 **Command**
 
