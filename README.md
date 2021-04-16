@@ -2,12 +2,13 @@ Welcome!
 
 This repository hosts code and datasets related to forecasting counts of resource utilization at a single hospital site, given a past time-series history of counts at that site. This code might be a start to help answering questions like: "How many people will be admitted on each day for the next two weeks? How many beds will be in use?" This is a collaborative research project between researchers in the Department of Computer Science at Tufts University and at Tufts Medical Center.
 
-See our manuscript (to be posted soon!):
+See our manuscript:
 
 > Forecasting COVID-19 counts at a single hospital: A Hierarchical Bayesian approach.
 > Alexandra Hope Lee, Panagiotis Lymperopoulos, Joshua T. Cohen, John B. Wong, and Michael C. Hughes.
-> Appears in ICLR 2021 Workshop on Machine Learning for Preventing and Combating Pandemics.
-> <a href="https://www.michaelchughes.com/papers/LeeEtAl_ICLRWorkshopMLPreventingCombatingPandemics_2021.pdf">https://www.michaelchughes.com/papers/LeeEtAl_ICLRWorkshopMLPreventingCombatingPandemics_2021.pdf</a>
+> In ICLR 2021 Workshop on Machine Learning for Preventing and Combating Pandemics, 2021.
+
+PDF: <a href="https://www.michaelchughes.com/papers/LeeEtAl_ICLRWorkshopMLPreventingCombatingPandemics_2021.pdf">https://www.michaelchughes.com/papers/LeeEtAl_ICLRWorkshopMLPreventingCombatingPandemics_2021.pdf</a>
 
 Jump to: [Project Goals](#project-goals) &nbsp; [Limitations](#limitations) &nbsp; [Quickstart Guide](#quickstart-guide) &nbsp; [Repository Contents](#repository-contents) &nbsp; [Installation Guide](#installation) &nbsp; [Datasets Guide](#datasets) &nbsp; [How to Run Experiments](#how-to-run-experiments) 
 
