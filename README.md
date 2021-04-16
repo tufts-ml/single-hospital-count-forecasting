@@ -7,7 +7,7 @@ See our manuscript (to be posted soon!):
 > Forecasting COVID-19 counts at a single hospital: A Hierarchical Bayesian approach.
 > Alexandra Hope Lee, Panagiotis Lymperopoulos, Joshua T. Cohen, John B. Wong, and Michael C. Hughes.
 > Appears in ICLR 2021 Workshop on Machine Learning for Preventing and Combating Pandemics.
-> [TODO arxiv.org link here]
+> <a href="https://www.michaelchughes.com/papers/LeeEtAl_ICLRWorkshopMLPreventingCombatingPandemics_2021.pdf">https://www.michaelchughes.com/papers/LeeEtAl_ICLRWorkshopMLPreventingCombatingPandemics_2021.pdf</a>
 
 Jump to: [Project Goals](#project-goals) &nbsp; [Limitations](#limitations) &nbsp; [Quickstart Guide](#quickstart-guide) &nbsp; [Repository Contents](#repository-contents) &nbsp; [Installation Guide](#installation) &nbsp; [Datasets Guide](#datasets) &nbsp; [How to Run Experiments](#how-to-run-experiments) 
 
