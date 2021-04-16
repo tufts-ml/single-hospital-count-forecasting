@@ -4,11 +4,7 @@ This repository hosts code and datasets related to forecasting counts of resourc
 
 See our manuscript:
 
-> Forecasting COVID-19 counts at a single hospital: A Hierarchical Bayesian approach.
-> Alexandra Hope Lee, Panagiotis Lymperopoulos, Joshua T. Cohen, John B. Wong, and Michael C. Hughes.
-> In ICLR 2021 Workshop on Machine Learning for Preventing and Combating Pandemics, 2021.
-
-PDF: <a href="https://www.michaelchughes.com/papers/LeeEtAl_ICLRWorkshopMLPreventingCombatingPandemics_2021.pdf">https://www.michaelchughes.com/papers/LeeEtAl_ICLRWorkshopMLPreventingCombatingPandemics_2021.pdf</a>
+Alexandra Hope Lee, Panagiotis Lymperopoulos, Joshua T. Cohen, John B. Wong, and Michael C. Hughes. <i> Forecasting COVID-19 counts at a single hospital: A Hierarchical Bayesian approach. </i> In ICLR 2021 Workshop on Machine Learning for Preventing and Combating Pandemics, 2021. PDF URL: <a href="https://www.michaelchughes.com/papers/LeeEtAl_ICLRWorkshopMLPreventingCombatingPandemics_2021.pdf">https://www.michaelchughes.com/papers/LeeEtAl_ICLRWorkshopMLPreventingCombatingPandemics_2021.pdf</a>
 
 Jump to: [Project Goals](#project-goals) &nbsp; [Limitations](#limitations) &nbsp; [Quickstart Guide](#quickstart-guide) &nbsp; [Repository Contents](#repository-contents) &nbsp; [Installation Guide](#installation) &nbsp; [Datasets Guide](#datasets) &nbsp; [How to Run Experiments](#how-to-run-experiments) 
 
